@@ -24,7 +24,7 @@ function getRandomUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
-var passCriterias;
+var passCriterias = [];
 
 // Write password to the #password input
 function writePassword() {
