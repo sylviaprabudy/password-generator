@@ -27,7 +27,7 @@ function getRandomUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
-// Write password to the #password input
+// Write password function
 function writePassword() {
     // Ask user how many characters of password they want to generate
     var passwordLength = prompt(
@@ -67,6 +67,7 @@ function writePassword() {
 
 // Generate createPass function. While length of passwordLenght isn't met yet, keep looping
 function createPass(criteria) {
+    console.log(criteria)
     var passwordArray = [];
     while (password.length < criteria.passwordLength) {
         if (criteria.specialChar) {
@@ -81,7 +82,8 @@ function createPass(criteria) {
         if (criteria.upperCaseChar) {
             passwordArray.push(getRandomUpper[randomPass(getRandomUpper)]);
         }
-    }
+    } 
+   
     var passwordStr = passwordArray.join('');
     generatePassword(passwordStr);
 }
