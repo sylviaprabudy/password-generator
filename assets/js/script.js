@@ -63,7 +63,6 @@ function writePassword() {
 
 // Generate createPass function. While length of passwordLenght isn't met yet, keep looping
 function createPass(criteria) {
-    console.log(criteria)
     var passwordArray = [];
     while (passwordArray.length < criteria.passwordLength) {
         if (criteria.specialChar) {
