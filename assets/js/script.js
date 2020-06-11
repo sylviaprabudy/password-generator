@@ -4,10 +4,6 @@ var generateBtn = document.querySelector("#generate");
 // Write password in textarea
 var passwordText = document.querySelector("#password");
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-
 // Create functions for each criterias
 function getRandomSpecial() {
     var special = "!@#$%^&*(){}[]<>=-_+/?~|";
@@ -69,18 +65,18 @@ function writePassword() {
 function createPass(criteria) {
     console.log(criteria)
     var passwordArray = [];
-    while (password.length < criteria.passwordLength) {
+    while (passwordArray.length < criteria.passwordLength) {
         if (criteria.specialChar) {
-            passwordArray.push(getRandomSpecial[randomPass(getRandomSpecial)]);
+            passwordArray.push(getRandomSpecial());
         }
         if (criteria.numericChar) {
-            passwordArray.push(getRandomNumber[randomPass(getRandomNumber)]);
+            passwordArray.push(getRandomNumber());
         }
         if (criteria.lowerCaseChar) {
-            passwordArray.push(getRandomLower[randomPass(getRandomLower)]);
+            passwordArray.push(getRandomLower());
         }
         if (criteria.upperCaseChar) {
-            passwordArray.push(getRandomUpper[randomPass(getRandomUpper)]);
+            passwordArray.push(getRandomUpper());
         }
     } 
    
@@ -97,3 +93,6 @@ function randomPass(characterSet) {
 function generatePassword(password) {
     passwordText.value = password;
 }
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
