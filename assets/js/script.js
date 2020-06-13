@@ -19,8 +19,8 @@ function createPass() {
     );
     //Check if the answer meets the requirement
     if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
-        alert("Please enter a valid answer. It has to be between 8 to 128");
-        createPass();
+        alert("Please enter a valid answer. It has to be between 8 to 128");        
+        return;
 
     } else {
         // Ask if user want to include any of these criterias
@@ -60,6 +60,9 @@ function createPass() {
 
 // Write password to the #password input
 function writePassword(password) {
+    if (password.length === 0) {
+        return;
+    }
     passwordText.value = password;
 }
 
