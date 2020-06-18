@@ -1,7 +1,10 @@
 # Password Generator
 
-An application that generates a random password based on user-selected criteria. This app runs in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It features a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+## Description:
 
+An application that generates a random password based on user-selected criteria. This app runs in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It features a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+ 
+### URL : https://sylviaprabudy.github.io/password-generator/
 
 ## User Story
 
@@ -30,6 +33,22 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
+
+## Steps :
+1. Go to https://sylviaprabudy.github.io/password-generator/
+<img src ="./assets/images/password-generator-1.png" alt="Random password generator">
+
+2. Click generate password. Then enter numeric between 8 to 128
+<img src ="./assets/images/password-generator-2.png" alt="Enter numeric between 8 to 128">
+
+3. Select criteria by clicking OK to include the character selections or Cancel to not include it. Go through all 4 criteria.
+<img src ="./assets/images/password-generator-3.png" alt="Criteria selection">
+
+4. Your randowm password is generated. Copy the password to use it.
+<img src ="./assets/images/password-generator-4.png" alt="Random password generated">
+
+
+
 ## Contributor:
 Sylvia Prabudy © 2020 All Rights Reserved.
 - - -
