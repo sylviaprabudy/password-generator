@@ -38,11 +38,14 @@ THEN the password is either displayed in an alert or written to the page
 1. Go to https://sylviaprabudy.github.io/password-generator/
 <img src ="./assets/images/password-generator-1.png" alt="Random password generator">
 
+
 2. Click generate password. Then enter numeric between 8 to 128
 <img src ="./assets/images/password-generator-2.png" alt="Enter numeric between 8 to 128">
 
+
 3. Select criteria by clicking OK to include the character selections or Cancel to not include it. Go through all 4 criteria.
 <img src ="./assets/images/password-generator-3.png" alt="Criteria selection">
+
 
 4. Your randowm password is generated. Copy the password to use it.
 <img src ="./assets/images/password-generator-4.png" alt="Random password generated">
