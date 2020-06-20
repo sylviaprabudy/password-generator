@@ -57,6 +57,6 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Contributor:
-Sylvia Prabudy © 2020 All Rights Reserved.
+Sylvia Prabudy ©2020 All Rights Reserved.
 - - -
 
